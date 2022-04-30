@@ -8,6 +8,7 @@
     <title>FCC | Survey Form</title>
 </head>
 <body>
+    
     <div class="container">
         <header>
             <h1 id="title">freeCodeCamp Survey Form</h1>
@@ -52,17 +53,17 @@
             </label> 
        
             <label>
-                <input type="radio" class="input-radio" value="maybe" name="user-decide">Maybe  
+                <input type="radio" class="input-radio" value="maybe" name="user-recomend">Maybe  
             </label>
 
             <label>
-                <input type="radio" class="input-radio" value="notsure" name="user-not-sure">Not Sure
+                <input type="radio" class="input-radio" value="notsure" name="user-recomend">Not Sure
             </label>
          </div>
 
          <div id="form-group">
              <p class="choice">What is your favourite feature of freeCodeCamp?</p>
-             <select name="favourite-feature" id="dropdown-features">
+             <select class="form-control" name="favourite-feature" id="dropdown-features">
                  <option selected option disabled>Select an option</option>
                  <option value="challenges">Challenges</option>
                  <option value="projects">Projects</option>
@@ -85,16 +86,19 @@
              <label for="additional-courses"><input type="checkbox" id="additional-courses" class="input-check" name="additional-courses" value="additional-courses">Additional-courses</label>
 
          </div>
-         <div id="form-group">             <p>Any comments or suggestions?</p>
-             <textarea class="comment" name="comment" id="comments" cols="15" rows="10" placeholder="Enter your comment here..."></textarea>
+         <div id="form-group">             
+             <p>Any comments or suggestions?</p>
+             <textarea class="comment" name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
          </div>
 
          <div id="form-group">
-              <button type="submit" id="submit" class="submit-btn" >submit</button>
+              <button type="submit" id="submit" class="submit-btn" >Submit</button>
          </div>
 
         </form>
     </div>
-    
+    <script src="survey.js">
+
+    </script>
 </body>
 </html>
