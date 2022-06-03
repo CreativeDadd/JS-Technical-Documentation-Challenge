@@ -5,9 +5,103 @@
           box-sizing: border-box;
 }
 
-body {
+#container {
+  margin: 0;
   line-height: 1.5;
   font-family: 'Open Sans', Arial, sans-serif;
+  /* color: #4d4e53;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 0rem;*/
+}
+
+.navbar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20rem;
+  height: 90%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 4px solid rgba(0, 22, 22, 0.4);
+  margin: 0;
+}
+
+.navbar #header {
+  text-align: center;
+  display: block;
+  width: 20rem;
+  padding: 2em 0 2em 0;
+}
+
+.navbar ul {
+  padding: 0;
+  margin-top: 0em;
+  line-height: 1.5;
+  display: block;
+  list-style: none;
+  width: 20rem;
+  height: 100%;
+  overflow: scroll;
+}
+
+.navbar ul li {
+  margin-bottom: 0.37em;
+  padding: 0.75em;
+  border-top: 1px solid #aaa;
+}
+
+.navbar ul li a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #000;
+  padding: 0;
+  line-height: 1.5;
+}
+
+#main-doc {
+  margin-left: 22em;
+}
+
+#main-doc header {
+  color: #000;
+  padding: 1.25em 0;
+}
+
+#main-doc div {
+  margin: 0 1em 0 1em;
+}
+
+#main-doc div p {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+#main-doc div ul {
+  margin: 1em 1em 1em 4em;
+}
+
+#main-doc div ul li {
+  margin: 1em 1em 1em 2em;
+}
+
+#main-doc div code {
+  display: block;
+  margin: 1.25em 0.75em 1.25em 0.75em;
+  background: #f7f7f7;
   color: #4d4e53;
+  font-size: 0.96em;
+  padding: 0.99em;
+  line-height: 2;
+  border-radius: 0.3125em;
+}
+
+@media only screen and (max-width: 650px) {
+  #container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
